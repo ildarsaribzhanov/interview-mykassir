@@ -19,7 +19,7 @@ $channel->queue_declare('queue-tasks', false, false, false, false);
 
 $max = 10000;
 
-while ($max-- > 0) {
+while ($max-- >= 0) {
     $doc    = new Document();
     $device = new Device();
     $task   = new TaskMessageHelper($device->getId(), $doc->getId());
