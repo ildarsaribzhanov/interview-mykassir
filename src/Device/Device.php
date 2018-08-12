@@ -19,7 +19,7 @@ class Device
      */
     public function __construct(?int $id = null)
     {
-        $this->id = $id ?? rand(1, 10);
+        $this->id = $id ?? rand(1, 2);
     }
     
     /** @return int */
